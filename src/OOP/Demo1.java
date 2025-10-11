@@ -35,6 +35,7 @@ public class Demo1 {
         //System.out.println(ayush.name+" "+  ayush.marks+" "+ayush.rollNo );
         ayush.setName("OJHA");
         System.out.println(ayush.getName());
+        System.out.println("hello");
 
     }
 
