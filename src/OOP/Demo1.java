@@ -6,6 +6,13 @@ class demo{
      private int rollNo;
      private float marks;
 
+    demo(){
+        this.name ="aYUSH";
+        this.rollNo=124;
+        this.marks=1123;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -38,6 +45,11 @@ public class Demo1 {
         System.out.println("hello");
 
     }
+
+
+
+
+
 
 }
 
