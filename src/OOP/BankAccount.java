@@ -46,4 +46,14 @@ class BankAccount {
             System.out.println("Deposit amount must be positive.");
         }
     }
+    public void withdraw(double amount) {
+        if (amount <= 0) {
+            System.out.println("Withdrawal amount must be positive.");
+        } else if (amount > this.balance) {
+            System.out.println("Withdrawal failed. Insufficient funds.");
+        } else {
+            this.balance -= amount;
+            System.out.println("Successfully withdrew: $" + amount);
+        }
+    }
 }
