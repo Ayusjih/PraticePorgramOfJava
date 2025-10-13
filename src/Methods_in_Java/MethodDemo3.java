@@ -21,6 +21,7 @@ public class MethodDemo3 {
     }
     public  static  void   changeName(String name)
     {
+
         name = sc.nextLine();
         System.out.println("In Method "+name);
     }
