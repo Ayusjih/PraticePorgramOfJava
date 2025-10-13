@@ -68,6 +68,19 @@ class Car {
             System.out.println("The car is already stationary.");
         }
     }
+    public class CarDemo {
+        public static void main(String[] args) {
+            Car myCar = new Car("Honda Civic", 2023);
+
+            System.out.println("My car is a " + myCar.getYear() + " " + myCar.getModel());
+
+            myCar.accelerate(50); // Fails because engine is off
+            myCar.startEngine();
+            myCar.accelerate(50);
+            myCar.accelerate(30);
+            myCar.brake(40);
+            myCar.stopEngine();
+        }
 }
 
 }
