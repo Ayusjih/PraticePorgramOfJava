@@ -57,5 +57,17 @@ class Car {
             System.out.println("Cannot accelerate, the engine is off.");
         }
     }
+    public void brake(double amount) {
+        if (speed > 0) {
+            this.speed -= amount;
+            if (this.speed < 0) {
+                this.speed = 0;
+            }
+            System.out.println("Braking. Speed is now " + this.speed + " km/h.");
+        } else {
+            System.out.println("The car is already stationary.");
+        }
+    }
+}
 
 }
