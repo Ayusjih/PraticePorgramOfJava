@@ -56,4 +56,22 @@ class BankAccount {
             System.out.println("Successfully withdrew: $" + amount);
         }
     }
+    public class BankDemo {
+        public static void main(String[] args) {
+            // Create an instance of BankAccount
+            BankAccount myAccount = new BankAccount("SB-12345", "Ayush Ojha");
+
+            // Use methods to interact with the object
+            System.out.println("Account Holder: " + myAccount.getAccountHolder()); // Getter
+            System.out.println("Initial Balance: $" + myAccount.getBalance()); // Getter
+
+            System.out.println("\n--- Transactions ---");
+            myAccount.deposit(5000.0);
+            myAccount.withdraw(1200.0);
+            myAccount.deposit(-100.0); // Invalid transaction
+            myAccount.withdraw(4000.0); // Invalid transaction
+
+            System.out.println("\nFinal Balance: $" + myAccount.getBalance());
+        }
+    }
 }
