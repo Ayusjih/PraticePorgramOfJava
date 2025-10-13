@@ -49,4 +49,13 @@ class Car {
             System.out.println("Engine is already off.");
         }
     }
+    public void accelerate(double amount) {
+        if (isEngineOn) {
+            this.speed += amount;
+            System.out.println(this.model + " is now moving at " + this.speed + " km/h.");
+        } else {
+            System.out.println("Cannot accelerate, the engine is off.");
+        }
+    }
+
 }
