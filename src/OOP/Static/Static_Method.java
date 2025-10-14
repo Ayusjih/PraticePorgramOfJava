@@ -8,7 +8,7 @@ public class Static_Method {
     public static void main(String[] args) {
 
         Static_Method.Greet();
-        Greet();dwdwdwrwfvfffevrbgrefcdcsssssssssssssscccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
        Static_Method obj = new Static_Method();
        obj.Greeting();
 
