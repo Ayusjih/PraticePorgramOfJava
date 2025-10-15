@@ -23,7 +23,7 @@ public class Static_Method {
     void Greeting()
     {
         System.out.println("Im from non static method");
-
+        fun();
     }
 
     void fun(){
