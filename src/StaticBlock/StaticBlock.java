@@ -5,7 +5,7 @@ public class StaticBlock {
     static int a = 4;
     static int b;
 
-    static{
+    static{// CALL AT THE TIME OF CLASS CREATIONN IN THE jvm
         System.out.println("in a static block");
         b = a*5;
     }
