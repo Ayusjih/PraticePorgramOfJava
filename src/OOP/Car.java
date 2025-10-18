@@ -1,86 +1,26 @@
 package OOP;
-class Car {
-    private String model;
-    private int year;
-    private double speed; // Speed in km/h
-    private boolean isEngineOn;
 
-    // Constructor
-    public Car(String model, int year) {
-        this.model = model;
-        this.year = year;
-        this.speed = 0.0;
-        this.isEngineOn = false;
+public class Car extends Vehicle {
+    private int numberOfDoors;
+
+    public Car(String make, String model, int year, double fuelLevel, int numberOfDoors) {
+        // 'super()' calls the constructor of the parent class (Vehicle)
+        super(make, model, year, fuelLevel);
+        this.numberOfDoors = numberOfDoors;
     }
 
-    // --- Getters ---
-    public String getModel() {
-        return model;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public double getSpeed() {
-        return speed;
-    }
-
-    public boolean isEngineOn() { // For booleans, getters often start with "is"
-        return isEngineOn;
-    }
-
-    // --- Methods that change the state ---
+    // Polymorphic implementation of the abstract method
+    @Override
     public void startEngine() {
-        if (!isEngineOn) {
-            this.isEngineOn = true;
-            System.out.println("Engine started.");
-        } else {
-            System.out.println("Engine is already on.");
+        System.out.println("Starting the car's engine... Vroom! 🚗");
+        if (fuelLevel <= 0) {
+            System.out.println("Warning: Out of fuel!");
         }
     }
 
-    public void stopEngine() {
-        if (isEngineOn) {
-            this.isEngineOn = false;
-            this.speed = 0; // Car stops when engine is off
-            System.out.println("Engine stopped.");
-        } else {
-            System.out.println("Engine is already off.");
-        }
+    // Overriding toString() for a custom description
+    @Override
+    public String toString() {
+        return super.toString() + " (" + this.numberOfDoors + " doors)";
     }
-    public void accelerate(double amount) {
-        if (isEngineOn) {
-            this.speed += amount;
-            System.out.println(this.model + " is now moving at " + this.speed + " km/h.");
-        } else {
-            System.out.println("Cannot accelerate, the engine is off.");
-        }
-    }
-    public void brake(double amount) {
-        if (speed > 0) {
-            this.speed -= amount;
-            if (this.speed < 0) {
-                this.speed = 0;
-            }
-            System.out.println("Braking. Speed is now " + this.speed + " km/h.");
-        } else {
-            System.out.println("The car is already stationary.");
-        }
-    }
-    public class CarDemo {
-        public static void main(String[] args) {
-            Car myCar = new Car("Honda Civic", 2023);
-
-            System.out.println("My car is a " + myCar.getYear() + " " + myCar.getModel());
-
-            myCar.accelerate(50); // Fails because engine is off
-            myCar.startEngine();
-            myCar.accelerate(50);
-            myCar.accelerate(30);
-            myCar.brake(40);
-            myCar.stopEngine();
-        }
-}
-
 }
