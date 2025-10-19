@@ -4,8 +4,6 @@ import OOP.Drivable;
 
 public abstract class Vehicle implements Drivable {
 
-    // --- FIELDS ---
-    // Encapsulation is strengthened by making all fields private.
     private String make;
     private String model;
     private int year;
@@ -22,8 +20,7 @@ public abstract class Vehicle implements Drivable {
         this.fuelLevel = Math.min(fuelLevel, fuelCapacity);
     }
 
-    // --- ABSTRACT METHODS (from Drivable interface) ---
-    // Subclasses MUST provide their own implementation for these.
+
     @Override
     public abstract void startEngine();
 
@@ -33,11 +30,7 @@ public abstract class Vehicle implements Drivable {
         System.out.println(getMake() + " " + getModel() + "'s engine has stopped.");
     }
 
-    /**
-     * Simulates driving the vehicle, which consumes fuel.
-     * @param distance The distance to drive in kilometers.
-     * @param fuelConsumptionRate Liters per kilometer.
-     */
+
     public void drive(double distance, double fuelConsumptionRate) {
         double fuelNeeded = distance * fuelConsumptionRate;
         if (fuelLevel >= fuelNeeded) {
@@ -48,11 +41,7 @@ public abstract class Vehicle implements Drivable {
         }
     }
 
-    /**
-     * Adds fuel to the vehicle's tank.
-     * Includes validation to prevent adding a negative amount or overfilling.
-     * @param amount The amount of fuel to add.
-     */
+
     public void refuel(double amount) {
         if (amount <= 0) {
             System.out.println("Cannot refuel a negative or zero amount.");
@@ -72,4 +61,4 @@ public abstract class Vehicle implements Drivable {
     @Override
     public double getFuelLevel() {
         return this.fuelLevel;
-    }
+    }}
