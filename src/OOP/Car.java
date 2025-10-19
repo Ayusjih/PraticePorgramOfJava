@@ -1,26 +1,34 @@
-package OOP;
-
 public class Car extends Vehicle {
+    // --- FIELDS ---
     private int numberOfDoors;
+    // Car-specific constant for fuel consumption (e.g., liters per kilometer)
+    private static final double FUEL_CONSUMPTION_RATE = 0.08; // 8L/100km
 
-    public Car(String make, String model, int year, double fuelLevel, int numberOfDoors) {
-        // 'super()' calls the constructor of the parent class (Vehicle)
-        super(make, model, year, fuelLevel);
+
+    public Car(String make, String model, int year, double fuelLevel, double fuelCapacity, int numberOfDoors) {
+
+        super(make, model, year, fuelLevel, fuelCapacity);
         this.numberOfDoors = numberOfDoors;
     }
 
-    // Polymorphic implementation of the abstract method
+
     @Override
     public void startEngine() {
         System.out.println("Starting the car's engine... Vroom! 🚗");
-        if (fuelLevel <= 0) {
-            System.out.println("Warning: Out of fuel!");
+        if (getFuelLevel() <= 0) {
+            System.out.println("Warning: Out of fuel! Please refuel.");
         }
     }
 
-    // Overriding toString() for a custom description
     @Override
     public String toString() {
         return super.toString() + " (" + this.numberOfDoors + " doors)";
+    }
+
+
+    public void drive(double distance) {
+        System.out.printf("Preparing to drive the %s for %.1f km.%n", getModel(), distance);
+
+        super.drive(distance, FUEL_CONSUMPTION_RATE);
     }
 }
