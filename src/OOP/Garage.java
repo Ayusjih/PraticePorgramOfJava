@@ -2,28 +2,41 @@ package OOP;
 
 public class Garage {
     public static void main(String[] args) {
-        // Create objects of the concrete classes
-        Vehicle myCar = new Car("Honda", "Civic", 2024, 10.5, 4);
-        Vehicle myMotorcycle = new Motorcycle("Royal Enfield", "Classic 350", 2022, 3.2, false);
+        // --- Create instances with the new constructor (including fuel capacity) ---
+        Car myCar = new Car("Honda", "Civic", 2024, 10.5, 50.0, 4);
+        Motorcycle myMotorcycle = new Motorcycle("Royal Enfield", "Classic 350", 2022, 3.2, 13.0, false);
 
-        // This is POLYMORPHISM in action. We store different subclasses
-        // in an array of the parent class type (Vehicle).
-        Vehicle[] vehicles = { myCar, myMotorcycle };
+        System.out.println("--- Welcome to the OOP Garage ---\n");
 
-        System.out.println("--- Operating Vehicles in the Garage ---\n");
+        // --- Demonstrate Car's functionality ---
+        System.out.println("--- Operating Car: " + myCar + " ---");
+        System.out.printf("Initial Fuel: %.2f / %.1f L%n", myCar.getFuelLevel(), myCar.getFuelCapacity());
+        myCar.startEngine();
 
-        // Loop through the array and operate on each vehicle
-        for (Vehicle v : vehicles) {
-            // The v.toString() method called here is the one from the specific
-            // subclass (Car or Motorcycle), not the one from Vehicle.
-            System.out.println("--- Details: " + v.toString() + " ---");
-            System.out.println("Current Fuel: " + v.getFuelLevel() + " gallons.");
+        // Drive the car for 100km
+        myCar.drive(100);
 
-            // The correct startEngine() method is called for each object
-            // at runtime. This is the essence of polymorphism.
-            v.startEngine();
-            v.stopEngine();
-            System.out.println(); // Add a blank line for readability
-        }
+        // Refuel the car
+        myCar.refuel(45);
+
+        // Try to drive too far, which should result in a warning
+        myCar.drive(800);
+
+        myCar.stopEngine();
+        System.out.println("\n----------------------------------------\n");
+
+
+        // --- Demonstrate Motorcycle's functionality ---
+        System.out.println("--- Operating Motorcycle: " + myMotorcycle + " ---");
+        System.out.printf("Initial Fuel: %.2f / %.1f L%n", myMotorcycle.getFuelLevel(), myMotorcycle.getFuelCapacity());
+        myMotorcycle.startEngine();
+
+        // Drive the motorcycle for 50km
+        myMotorcycle.drive(50);
+
+        // Refuel it
+        myMotorcycle.refuel(5);
+
+        myMotorcycle.stopEngine();
     }
 }
