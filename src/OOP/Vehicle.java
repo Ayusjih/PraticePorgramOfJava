@@ -8,7 +8,39 @@ public abstract class Vehicle implements Drivable {
     private String model;
     private int year;
     private double fuelLevel;
-    private final double fuelCapacity; // Added a constant for max fuel
+    private final double fuelCapacity;
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getFuelCapacity() {
+        return fuelCapacity;
+    }
 
     // --- CONSTRUCTOR ---
     public Vehicle(String make, String model, int year, double fuelLevel, double fuelCapacity) {
