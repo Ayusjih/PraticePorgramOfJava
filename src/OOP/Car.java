@@ -3,7 +3,7 @@ package OOP;
 public class Car extends Vehicle {
     // --- FIELDS ---
     private int numberOfDoors;
-    // Car-specific constant for fuel consumption (e.g., liters per kilometer)
+
     private static final double FUEL_CONSUMPTION_RATE = 0.08; // 8L/100km
 
 
