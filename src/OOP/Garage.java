@@ -27,7 +27,7 @@ public class Garage {
 
 
         // --- Demonstrate Motorcycle's functionality ---
-        System.out.println("--- Operating Motorcycle: " + myMotorcycle + " ---");
+        System.out.println("Operating Motorcycle: " + myMotorcycle + "-");
         System.out.printf("Initial Fuel: %.2f / %.1f L%n", myMotorcycle.getFuelLevel(), myMotorcycle.getFuelCapacity());
         myMotorcycle.startEngine();
 
