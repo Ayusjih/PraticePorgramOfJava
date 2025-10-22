@@ -8,30 +8,30 @@ public class Garage {
 
         System.out.println("--- Welcome to the OOP Garage ---\n");
 
-        // --- Demonstrate Car's functionality ---
+
         System.out.println("--- Operating Car: " + myCar + " ---");
         System.out.printf("Initial Fuel: %.2f / %.1f L%n", myCar.getFuelLevel(), myCar.getFuelCapacity());
         myCar.startEngine();
 
-        // Drive the car for 100km
+
         myCar.drive(100);
 
-        // Refuel the car
+
         myCar.refuel(45);
 
-        // Try to drive too far, which should result in a warning
+
         myCar.drive(800);
 
         myCar.stopEngine();
         System.out.println("\n--------------\n");
 
 
-        // --- Demonstrate Motorcycle's functionality ---
+
         System.out.println("Operating Motorcycle: " + myMotorcycle + "-");
         System.out.printf("Initial Fuel: %.2f / %.1f L%n", myMotorcycle.getFuelLevel(), myMotorcycle.getFuelCapacity());
         myMotorcycle.startEngine();
 
-        // Drive the motorcycle for 50km
+
         myMotorcycle.drive(50);
 
         // Refuel it
