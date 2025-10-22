@@ -1,7 +1,7 @@
 package OOP;
 
 public class Car extends Vehicle {
-    // --- FIELDS ---
+
     private int numberOfDoors;
 
     private static final double FUEL_CONSUMPTION_RATE = 0.08; // 8L/100km
