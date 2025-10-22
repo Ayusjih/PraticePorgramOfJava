@@ -89,7 +89,7 @@ public abstract class Vehicle implements Drivable {
         }
     }
 
-    // --- GETTERS (Access to encapsulated data) ---
+
     @Override
     public double getFuelLevel() {
         return this.fuelLevel;
