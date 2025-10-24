@@ -2,7 +2,7 @@ package OOP;
 
 public class Garage {
     public static void main(String[] args) {
-        // --- Create instances with the new constructor (including fuel capacity) ---
+
         Car myCar = new Car("Honda", "Civic", 2024, 10.5, 50.0, 4);
         Motorcycle myMotorcycle = new Motorcycle("Royal Enfield", "Classic 350", 2022, 3.2, 13.0, false);
 
