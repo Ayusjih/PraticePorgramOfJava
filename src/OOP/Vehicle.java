@@ -56,7 +56,7 @@ public abstract class Vehicle implements Drivable {
     @Override
     public abstract void startEngine();
 
-    // --- CONCRETE METHODS (Behavior) ---
+
     @Override
     public void stopEngine() {
         System.out.println(getMake() + " " + getModel() + "'s engine has stopped.");
