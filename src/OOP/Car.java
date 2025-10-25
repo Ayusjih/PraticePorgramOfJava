@@ -13,7 +13,6 @@ public class Car extends Vehicle {
         this.numberOfDoors = numberOfDoors;
     }
 
-
     @Override
     public void startEngine() {
         System.out.println("Starting the car's engine... Vroom! 🚗");
@@ -26,7 +25,6 @@ public class Car extends Vehicle {
     public String toString() {
         return super.toString() + " (" + this.numberOfDoors + " doors)";
     }
-
 
     public void drive(double distance) {
         System.out.printf("Preparing to drive the %s for %.1f km.%n", getModel(), distance);
