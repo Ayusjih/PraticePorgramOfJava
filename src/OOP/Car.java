@@ -6,7 +6,6 @@ public class Car extends Vehicle {
 
     private static final double FUEL_CONSUMPTION_RATE = 0.08; // 8L/100km
 
-
     public Car(String make, String model, int year, double fuelLevel, double fuelCapacity, int numberOfDoors) {
 
         super(make, model, year, fuelLevel, fuelCapacity);
