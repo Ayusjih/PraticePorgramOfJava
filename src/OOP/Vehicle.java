@@ -42,13 +42,13 @@ public abstract class Vehicle implements Drivable {
         return fuelCapacity;
     }
 
-    // --- CONSTRUCTOR ---
+
     public Vehicle(String make, String model, int year, double fuelLevel, double fuelCapacity) {
         this.make = make;
         this.model = model;
         this.year = year;
         this.fuelCapacity = fuelCapacity;
-        // Ensure initial fuel level doesn't exceed capacity
+
         this.fuelLevel = Math.min(fuelLevel, fuelCapacity);
     }
 
