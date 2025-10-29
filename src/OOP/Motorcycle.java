@@ -7,7 +7,7 @@ public class Motorcycle extends Vehicle {
 
 
     public Motorcycle(String make, String model, int year, double fuelLevel, double fuelCapacity, boolean hasSidecar) {
-        // Call the parent constructor
+
         super(make, model, year, fuelLevel, fuelCapacity);
         this.hasSidecar = hasSidecar;
     }
