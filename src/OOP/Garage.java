@@ -23,7 +23,7 @@ public class Garage {
         myCar.drive(800);
 
         myCar.stopEngine();
-        System.out.println("\n--------------\n");
+        System.out.println("\n-----------\n");
 
 
 
