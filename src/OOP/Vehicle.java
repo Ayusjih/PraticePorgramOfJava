@@ -17,7 +17,7 @@ public abstract class Vehicle implements Drivable {
     public void setMake(String make) {
         this.make = make;
     }
-
+//here getter setter sets
     public String getModel() {
         return model;
     }
