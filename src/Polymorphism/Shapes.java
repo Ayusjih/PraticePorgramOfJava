@@ -1,6 +1,6 @@
 package Polymorphism;
 
-public class Shapes {
+class Shape {
     void area()
     {
         System.out.println("Area is :" );
@@ -8,22 +8,40 @@ public class Shapes {
 
 }
 
-class Cricle extends Shapes{
+class Circle extends Shape{
     void area()
     {
         System.out.println("Area of circle: ");
     }
 }
-class Tringle extends Shapes{
+class Tringle extends Shape{
     void area()
     {
         System.out.println("Area of Tringle: ");
     }
 }
 
-class Square extends Shapes{
+class Square extends Shape{
     void area()
     {
         System.out.println("Area of circle: ");
     }
 }
+
+
+public class Shapes{
+    void area()
+    {
+        System.out.println("IN MAIN CLASS");
+    }
+
+    public static void main(String[] args) {
+
+
+
+    }
+}
+
+
+
+
