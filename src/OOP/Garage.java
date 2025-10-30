@@ -1,6 +1,6 @@
 package OOP;
 
-public class Garage {
+public class Garage{
     public static void main(String[] args) {
 
         Car myCar = new Car("Honda", "Civic", 2024, 10.5, 50.0, 4);
