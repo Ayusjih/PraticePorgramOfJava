@@ -31,10 +31,7 @@ public class Shapes{
     {
         System.out.println("IN MAIN CLASS");
     }
-
     public static void main(String[] args) {
-
-
 
     }
 }
