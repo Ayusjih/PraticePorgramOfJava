@@ -20,15 +20,12 @@ class Tringle extends Shape{
         System.out.println("Area of Tringle: ");
     }
 }
-
 class Square extends Shape{
     void area()
     {
         System.out.println("Area of circle: ");
     }
 }
-
-
 public class Shapes{
     void area()
     {
