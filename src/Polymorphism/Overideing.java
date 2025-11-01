@@ -10,7 +10,6 @@ public class Overideing {
         return "num"+" = "+num;
     }
 
-
     public static void main(String[] args) {
         Overideing O1 = new Overideing(23);
         System.out.println(O1);
