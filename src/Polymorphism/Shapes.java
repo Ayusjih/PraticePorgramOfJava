@@ -33,6 +33,18 @@ public class Shapes{
     }
     public static void main(String[] args) {
 
+        Shape S1 = new Shape();
+        S1.area();
+
+        Tringle Tringle = new Tringle();
+        Circle Circle = new Circle();
+        Square Square = new Square();
+
+        Shape S2 = new Circle();
+        S2.area();
+
+
+
     }
 }
 
