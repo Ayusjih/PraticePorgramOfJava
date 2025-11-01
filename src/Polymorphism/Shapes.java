@@ -9,12 +9,14 @@ class Shape {
 }
 
 class Circle extends Shape{
+    @Override
     void area()
     {
         System.out.println("Area of circle: ");
     }
 }
 class Tringle extends Shape{
+    @Override
     void area()
     {
         System.out.println("Area of Tringle: ");
@@ -27,6 +29,10 @@ class Square extends Shape{
     }
 }
 public class Shapes{
+    public Shapes(){
+        super();
+    }
+
     void area()
     {
         System.out.println("IN MAIN CLASS");
