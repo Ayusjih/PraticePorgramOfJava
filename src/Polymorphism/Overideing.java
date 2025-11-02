@@ -4,7 +4,6 @@ public class Overideing {
     int num;
     Overideing(int num){
         this.num = num;
-
     }
     public String toString(){
         return "num"+" = "+num;
