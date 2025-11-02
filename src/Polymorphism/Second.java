@@ -14,7 +14,6 @@ public class Second {
     {
         System.out.println("C");
     }
-
     public static void main(String[] args) {
 
         Second S= new Second();
