@@ -5,7 +5,6 @@ class Shape {
     {
         System.out.println("Area is :" );
     }
-
 }
 class Circle extends Shape{
     @Override
