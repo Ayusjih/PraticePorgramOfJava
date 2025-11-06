@@ -10,7 +10,9 @@ public class Kangaroo2 {
         for(int i =0;i<10000;i++) {
             if (y1 == y2) {
                 System.out.println("yes");
+                return "YES";
             }
+
 
             y1 = y1 + v1;
             y2 = y2 + v2;
@@ -25,7 +27,7 @@ public class Kangaroo2 {
 
     public static void main(String[] args) {
 
-        kangaroo(0,2,3,2);
+        kangaroo(0,3,4,2);
 
     }
 
