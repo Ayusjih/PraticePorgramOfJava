@@ -8,7 +8,6 @@ public class First {
         this.num = num;
         this.Name = Name;
     }
-
     void display()
     {
         System.out.println(" "+num);
