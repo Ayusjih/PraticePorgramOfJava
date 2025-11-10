@@ -28,7 +28,6 @@ public class Solution {
                 list.remove(index);
             }
         }
-
         sc.close();
 
         // print final list elements in one line separated by space
