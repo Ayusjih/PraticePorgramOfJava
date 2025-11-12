@@ -10,9 +10,9 @@ public class Main {
         d1.eat();
         c1.eat();
         c1.sleep();
-
         System.out.println(InterfaceOne.defaultFinalVariable);
-
+        //InterfaceOne.greeting();
+        d1.greeting();
 
     }
 }
