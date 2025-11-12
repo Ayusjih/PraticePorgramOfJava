@@ -13,7 +13,6 @@ public class First {
         System.out.println(" "+num);
     }
 
-
     public int getNum() {
         return this.num;
     }
