@@ -6,8 +6,6 @@ public interface InterfaceOne {
     public void sleep();
 
     default  void greeting()
-    {
-        System.out.println("asda");
-    }
+    {        System.out.println("asda");    }
 
 }
