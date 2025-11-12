@@ -2,8 +2,7 @@ package Polymorphism;
 
 public class Second {
 
-    void sum(int a,int b)
-    {
+    void sum(int a,int b)    {
         System.out.println("A");
     }
     void sum(int a , int b, int c)
