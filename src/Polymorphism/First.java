@@ -1,8 +1,6 @@
 package Polymorphism;
 
 public class First {
-
-
     int sum(int a,int b)
     {
         return a+b;
