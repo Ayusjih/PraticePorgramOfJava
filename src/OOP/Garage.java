@@ -7,8 +7,6 @@ public class Garage{
         Motorcycle myMotorcycle = new Motorcycle("Royal Enfield", "Classic 350", 2022, 3.2, 13.0, false);
 
         System.out.println("--- Welcome to the OOP Garage ---\n");
-
-
         System.out.println("--- Operating Car: " + myCar + " ---");
         System.out.printf("Initial Fuel: %.2f / %.1f L%n", myCar.getFuelLevel(), myCar.getFuelCapacity());
         myCar.startEngine();
