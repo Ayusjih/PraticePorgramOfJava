@@ -7,5 +7,4 @@ public interface InterfaceOne {
 
     default  void greeting()
     {        System.out.println("asda");    }
-
 }
