@@ -2,7 +2,7 @@ package HackerRank;
 import java.io.*;
 import java.util.*;
 
-class Result {
+class Result1 {
 
     /*
      * Complete the 'findDay' function below.
@@ -30,7 +30,7 @@ class Result {
 
 public class javaDateAndTime {
     public static void main(String[] args) throws IOException {
-        String result = Result.findDay(9, 9, 2005);
+        String result = Result1.findDay(9, 9, 2005);
         System.out.println("The day was: " + result);
     }
 }
