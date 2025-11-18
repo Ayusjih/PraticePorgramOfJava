@@ -1,7 +1,6 @@
 package Polymorphism;
 
 public class Second {
-
     void sum(int a,int b)    {
         System.out.println("A");
     }
@@ -16,7 +15,6 @@ public class Second {
     public static void main(String[] args) {
 
         Second S= new Second();
-
         S.sum(2,2.5);
     }
 }
