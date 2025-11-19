@@ -61,7 +61,6 @@ public class DenseRanking {
             int rankedItem = Integer.parseInt(rankedTemp[i]);
             ranked.add(rankedItem);
         }
-
         int playerCount = Integer.parseInt(bufferedReader.readLine().trim());
 
         String[] playerTemp = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
