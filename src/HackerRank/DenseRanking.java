@@ -82,7 +82,6 @@ public class DenseRanking {
                 bufferedWriter.write("\n");
             }
         }
-
         bufferedWriter.newLine();
 
         bufferedReader.close();
