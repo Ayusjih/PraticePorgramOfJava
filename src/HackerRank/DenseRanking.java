@@ -72,7 +72,6 @@ public class DenseRanking {
             int playerItem = Integer.parseInt(playerTemp[i]);
             player.add(playerItem);
         }
-
         List<Integer> result = Result.climbingLeaderboard(ranked, player);
 
         for (int i = 0; i < result.size(); i++) {
