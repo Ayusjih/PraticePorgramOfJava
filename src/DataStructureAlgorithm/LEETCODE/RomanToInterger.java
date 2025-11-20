@@ -24,8 +24,6 @@ public class RomanToInterger {
 
         }
 
-
-
         private int value(char ch) {
             switch (ch) {
                 case 'I': return 1;
