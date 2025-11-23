@@ -1,6 +1,7 @@
 package DataStructureAlgorithm.LEETCODE;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {
@@ -18,12 +19,7 @@ public class RemoveElement {
         {
             nums[i]=res.get(i);
         }
-
-
         return k;
-
-
-
     }
 
     public static void main(String[] args)
@@ -33,6 +29,9 @@ public class RemoveElement {
         r1.removeElement(array,3);
 
     }
+
+
+
 
 
 }
