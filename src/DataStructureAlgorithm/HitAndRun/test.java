@@ -99,7 +99,7 @@ class test1 {
 
 public class test{
 
-     static int[] are={1,9,8};
+     static int[] are={10,5,10};
     public static void main(String[] args) {
         test1 t = new test1();
        // t.plusOne(are);
