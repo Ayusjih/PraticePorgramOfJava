@@ -91,19 +91,34 @@ class test1 {
 
     }
 
-}
+
+        public int missingNumber(int[] nums) {
+            Arrays.sort(nums);
+            int res = 0;
+            int j =0;
 
 
+            for(int i =0;i<nums.length;i++)
+            {
+                res= res +nums[i];
+                j+=j;
+                j++;
+            }
 
+            res = j-res;
+            return res;
 
+        }
+    }
 
 public class test{
 
-     static int[] are={10,5,10};
+     static int[] are={0,3,1};
     public static void main(String[] args) {
         test1 t = new test1();
        // t.plusOne(are);
         //t.plustwo(are);
-        t.getSecondLargest(are);
+      //  t.getSecondLargest(are);
+        t.missingNumber(are);
     }
 }

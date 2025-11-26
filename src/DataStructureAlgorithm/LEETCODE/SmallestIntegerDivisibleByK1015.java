@@ -19,7 +19,7 @@ public class SmallestIntegerDivisibleByK1015 {
     public static void main(String[] args) {
 
         SmallestIntegerDivisibleByK1015 s1 = new SmallestIntegerDivisibleByK1015();
-        s1.smallestRepunitDivByK(23);
+        s1.smallestRepunitDivByK(7);
     }
 
 
