@@ -5,7 +5,9 @@ import jdk.jshell.execution.JdiDefaultExecutionControl;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static java.util.Collections.reverse;
 
@@ -109,6 +111,41 @@ class test1 {
             return res;
 
         }
+
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        List<Boolean> List1 = new ArrayList<>();
+        int n=candies.length,max=0;
+        int[] res=new int[n];
+
+        for(int i =0;i<candies.length;i++)
+        {
+            res[i]+=extraCandies;
+
+        }
+
+
+        for(int i=0;i<candies.length;i++)
+        {
+            if(max <candies[i])
+            {max=candies[i];}
+
+        }
+
+        /*for(int i=0;i<n;i++)
+        {
+            if(max<=res.get(i))
+            {
+                List1.add(true);
+            }
+            else
+            {
+                List1.add(false);
+            }
+        }*/
+        System.out.println(res);
+        return List1;
+
+    }
     }
 
 public class test{
@@ -119,6 +156,7 @@ public class test{
        // t.plusOne(are);
         //t.plustwo(are);
       //  t.getSecondLargest(are);
-        t.missingNumber(are);
+     //   t.missingNumber(are);
+        t.kidsWithCandies(are,2);
     }
 }

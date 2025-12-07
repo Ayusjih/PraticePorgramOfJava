@@ -14,6 +14,7 @@ public class MissingNumber168 {
             }
 
             res = sum-res;
+            System.out.println(res);
             return res;
 
         }

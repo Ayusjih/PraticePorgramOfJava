@@ -25,11 +25,11 @@ public class KidsWithextraCandies {
 
         for(int i=0;i<n;i++)
         {
-            if(max<=res.get(i))
+           // if(max<=res)
             {
                 List1.add(true);
             }
-            else
+            //else
             {
                 List1.add(false);
             }
@@ -41,6 +41,6 @@ public class KidsWithextraCandies {
 
     public static void main(String[] args) {
         KidsWithextraCandies kd =new KidsWithextraCandies();
-        kd.kidsWithCandies();
+        //kd.kidsWithCandies();
     }
 }
