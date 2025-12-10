@@ -1,30 +1,39 @@
-package DataStructureAlgorithm.LEETCODE;
+class Solution {
+    public int thirdMax(int[] nums) {
+        int n=nums.length;
+        long first= Long.MIN_VALUE;
+        long second= Long.MIN_VALUE;
+        long third= Long.MIN_VALUE;
 
-public class LEET27 {
+        for(int i=0; i<n; i++){
+            if(nums[i]==first||nums[i]==second||nums[i]==third){
+                continue;
 
-
-        public int removeElement(int[] nums, int val) {
-            int i =0;
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[j] != val) {
-                    nums[i] = nums[j];
-                    i++;
-                }
             }
+            if(nums[i]>first){
+                third= second;
+                second=first;
+                first=nums[i];
 
-            return i;
+            }
+            else if(nums[i]>second){
+                third=second;
+                second=nums[i];
 
+            }
+            else if(nums[i]>third){
+                third=nums[i];
+            }
 
 
         }
+        if(third==Long.MIN_VALUE){
+            return (int)first;
+        }
+        else{
+            return(int)third;
+        }
 
-    public static void main(String[] args) {
-            int[] arr = {1,3,3,3,3,3,3,2,3,3,4,5,6};
-            LEET27 obj = new LEET27();
-            obj.removeElement(arr,3);
+
     }
-
-
-    }
-
-
+}
