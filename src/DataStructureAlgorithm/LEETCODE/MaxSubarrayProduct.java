@@ -15,9 +15,6 @@ public class MaxSubarrayProduct {
             ans = Math.max(ans,Math.max(pre,suff));
         }
         return ans;
-
-
-
     }
 
 }
