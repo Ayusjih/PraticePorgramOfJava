@@ -14,8 +14,6 @@ public class Array1920 {
 
             }
             return ans;
-
-
         }
 
 
