@@ -12,7 +12,6 @@ public class ArthimeticSubarray {
         for (int i = 0; i < l.length; i++) {
             int start = l[i];
             int end = r[i];
-
             int len = end - start + 1;
             int[] temp = new int[len];
 
