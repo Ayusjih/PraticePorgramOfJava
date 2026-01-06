@@ -5,7 +5,6 @@ public class minSubArrayLen {
         if (nums == null || nums.length == 0) {
             return 0;
         }
-
         int minLength = Integer.MAX_VALUE;
         int currentSum = 0;
         int left = 0;
