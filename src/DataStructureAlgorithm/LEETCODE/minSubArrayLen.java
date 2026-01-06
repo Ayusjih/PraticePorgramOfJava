@@ -9,8 +9,6 @@ public class minSubArrayLen {
         int minLength = Integer.MAX_VALUE;
         int currentSum = 0;
         int left = 0;
-
-
         for (int right = 0; right < nums.length; right++) {
             currentSum += nums[right];
             while (currentSum >= target) {
