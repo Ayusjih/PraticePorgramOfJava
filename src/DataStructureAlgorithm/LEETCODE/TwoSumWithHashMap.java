@@ -13,10 +13,10 @@ public class TwoSumWithHashMap {
             ans[0]=-1;
             ans[1]=-1;
 
-            for(int i =0;i<n;i++)
+        /*    for(int i =0;i<n;i++)
             {
                 mpp.put(nums[i],i);
-            }
+            }**/
 
             for(int i=0;i<n;i++)
             {
@@ -27,6 +27,7 @@ public class TwoSumWithHashMap {
                     ans[1]=mpp.get(rem);
                     break;
                 }
+                mpp.put(nums[i],i);
             }
 
             return ans;
