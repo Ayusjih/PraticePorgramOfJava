@@ -14,7 +14,6 @@ public class minSubArrayLen {
 
                 int currentWindowSize = right - left + 1;
                 minLength = Math.min(minLength, currentWindowSize);
-
                 currentSum -= nums[left];
                 left++;
             }
