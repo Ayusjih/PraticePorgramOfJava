@@ -5,8 +5,7 @@ class Solution {
         for(int i =0;i<n;i++)
         {
             if(mpp.containsKey(nums[i]))
-            {
-                if(Math.abs(i-mpp.get(nums[i]))<=k)
+            { if(Math.abs(i-mpp.get(nums[i]))<=k)
                 {return true;}
             }
             mpp.put(nums[i],i);
