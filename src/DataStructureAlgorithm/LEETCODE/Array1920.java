@@ -1,5 +1,4 @@
 package DataStructureAlgorithm.LEETCODE;
-
 public class Array1920 {
 
         public int[] buildArray(int[] nums) {
