@@ -2,8 +2,6 @@ package DataStructureAlgorithm.HitAndRun;
 
 public class bubbleSort {
     public static void main(String[] args) {
-
-
         int [] nums ={1,4,2,6,2,6,8};
         int n = nums.length;
 
