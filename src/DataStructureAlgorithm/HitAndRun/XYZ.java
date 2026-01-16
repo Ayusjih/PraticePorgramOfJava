@@ -6,8 +6,6 @@ class XYZ {
         int i = 0;
         int pos = 0;
         int j = n - 1, temp = 0;
-
-
         while (n != 0) {
             if (nums[i] == 0) {
                 temp = nums[i];
