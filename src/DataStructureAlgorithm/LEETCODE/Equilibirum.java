@@ -24,7 +24,6 @@ public class Equilibirum {// User function Template for Java
                 suffix[i] = suffix[i+1]+arr[i];
             }
 
-
             for(int i=0;i<n;i++)
             {
                 if(preffix[i] == suffix[i])
