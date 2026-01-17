@@ -11,7 +11,6 @@ public class wordPattern {
 
             Map<Character, String> charToWord = new HashMap<>();
             Map<String, Character> wordToChar = new HashMap<>();
-
             for (int i = 0; i < pattern.length(); i++) {
                 char c = pattern.charAt(i);
                 String w = words[i];
