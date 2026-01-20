@@ -8,6 +8,7 @@ public class ArthimeticSubarray {
 
         List<Boolean> result = new ArrayList<>();
 
+        
         for (int i = 0; i < l.length; i++) {
             int start = l[i];
             int end = r[i];
