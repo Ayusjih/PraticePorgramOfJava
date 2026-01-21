@@ -35,9 +35,7 @@ class greatsum {
             bucketMin[idx] = Math.min(bucketMin[idx], num);
             bucketMax[idx] = Math.max(bucketMax[idx], num);
         }
-
-
-        int maxGap = 0;
+                int maxGap = 0;
         int prevMax = min;
 
         for (int i = 0; i < bucketCount; i++) {
