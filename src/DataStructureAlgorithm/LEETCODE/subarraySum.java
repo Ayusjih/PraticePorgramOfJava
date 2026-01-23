@@ -7,8 +7,7 @@ public class subarraySum {
         public int subarraySum1(int[] nums, int k) {
 
             HashMap<Integer, Integer> map = new HashMap<>();
-            map.put(0, 1);   // base case: sum = 0 occurs once
-
+            map.put(0, 1);
             int sum = 0;
             int count = 0;
 
