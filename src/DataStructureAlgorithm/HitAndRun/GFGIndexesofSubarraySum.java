@@ -5,7 +5,6 @@ class Solution {
 
         int n = arr.length;
 
-
         ArrayList<Integer> list= new ArrayList<>();
         HashMap<Long, Integer> mpp = new HashMap<>();
         long prefix =0;
