@@ -4,7 +4,6 @@ public class Sqrt {
 
         public int mySqrt(int x) {
             if (x < 2) return x;
-
             int left = 1, right = x / 2;
             int ans = 0;
 
@@ -19,7 +18,6 @@ public class Sqrt {
                     right = mid - 1;
                 }
             }
-
             return ans;
         }
     }
