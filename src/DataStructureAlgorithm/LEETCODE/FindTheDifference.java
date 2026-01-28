@@ -8,11 +8,9 @@ public class FindTheDifference {
             for (int i = 0; i < s.length(); i++) {
                 xor ^= s.charAt(i);
             }
-
             for (int i = 0; i < t.length(); i++) {
                 xor ^= t.charAt(i);
             }
-
             return (char) xor;
         }
     }
