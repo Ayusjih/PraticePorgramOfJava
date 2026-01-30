@@ -35,7 +35,6 @@ public class Subarray1343 {
                 }
 
             }
-
             return count;
 
         }
