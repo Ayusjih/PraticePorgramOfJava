@@ -23,7 +23,6 @@ public class P1439 {
 
             }
 
-
         }
         return maxx;
 
