@@ -18,7 +18,6 @@ public class P1004 {
                 answer[i] *= suffixProduct;
                 suffixProduct *= nums[i];
             }
-
             return answer;
         }
     }
