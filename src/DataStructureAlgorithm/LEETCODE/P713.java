@@ -19,7 +19,6 @@ public class P713 {
 
                 count += (j - i + 1);
                 j++;
-
             }
             return count;
 
