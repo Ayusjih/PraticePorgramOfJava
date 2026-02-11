@@ -29,8 +29,6 @@ public class P345 {
                 s2[j] = temp;
                 i++;
                 j--;
-
-
             }
 
             return new String(s2);   }
