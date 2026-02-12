@@ -25,5 +25,3 @@ public class P917 {
             return new String(arr);
         }
     }
-
-
