@@ -22,7 +22,6 @@ public class P917 {
                     j--;
                 }
             }
-
             return new String(arr);
         }
     }
