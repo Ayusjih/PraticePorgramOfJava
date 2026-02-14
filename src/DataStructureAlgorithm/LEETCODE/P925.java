@@ -4,7 +4,6 @@ public class P925 {
 
         public boolean isLongPressedName(String name, String typed) {
             int i = 0, j = 0;
-
             while (j < typed.length()) {
 
                 if (i < name.length() && name.charAt(i) == typed.charAt(j)) {
