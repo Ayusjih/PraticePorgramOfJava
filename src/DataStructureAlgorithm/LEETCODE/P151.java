@@ -10,7 +10,6 @@ public class P151 {
                 sb.append(words[i]);
                 if (i != 0) sb.append(" ");
             }
-
             return sb.toString();
         }
     }
