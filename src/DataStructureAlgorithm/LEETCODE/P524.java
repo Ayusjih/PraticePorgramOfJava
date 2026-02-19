@@ -18,7 +18,6 @@ public class P524 {
 
             return result;
         }
-
         private boolean isSubsequence(String s, String word) {
             int i = 0;
             int j = 0;
