@@ -1,7 +1,6 @@
 package DataStructureAlgorithm.LEETCODE;
 
 public class P2062 {
-
         public int countVowelSubstrings(String word) {
             int n = word.length();
             int count = 0;
@@ -31,12 +30,10 @@ public class P2062 {
 
             return count;
         }
-
         public boolean isVowel(char ch) {
             return ch == 'a' || ch == 'e' || ch == 'i'
                     || ch == 'o' || ch == 'u';
         }
-
         private int getIndex(char ch) {
             switch (ch) {
                 case 'a': return 0;
