@@ -1,7 +1,7 @@
 package DataStructureAlgorithm.LEETCODE;
 
 public class P424 {
-    class Solution {
+
         public int characterReplacement(String s, int k) {
             HashMap<Character,Integer> mpp = new HashMap<>();
             int n = s.length();
@@ -30,4 +30,4 @@ public class P424 {
             return maxi;
         }
     }
-}
+
