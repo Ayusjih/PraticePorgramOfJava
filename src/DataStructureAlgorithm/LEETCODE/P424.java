@@ -1,7 +1,6 @@
 package DataStructureAlgorithm.LEETCODE;
 
 public class P424 {
-
         public int characterReplacement(String s, int k) {
             HashMap<Character,Integer> mpp = new HashMap<>();
             int n = s.length();
