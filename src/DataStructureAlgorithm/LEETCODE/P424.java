@@ -18,8 +18,7 @@ public class P424 {
                     char c = s.charAt(i);
                     mpp.put(c,mpp.get(c)-1);
                     if(mpp.get(c)==0)
-                    {
-                        mpp.remove(c);
+                    {mpp.remove(c);
                     }
                     i++;
                 }
