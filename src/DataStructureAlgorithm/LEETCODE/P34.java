@@ -80,10 +80,6 @@ public class P34 {
             arr[1]= Second(nums,target);
 
             return arr;
-
-
-
-
         }
     }
 }
