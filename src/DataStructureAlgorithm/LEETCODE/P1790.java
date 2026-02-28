@@ -1,7 +1,7 @@
 package DataStructureAlgorithm.LEETCODE;
 
 public class P1790 {
-    class Solution {
+
         public boolean areAlmostEqual(String s1, String s2) {
 
             if (s1.equals(s2)) {
@@ -30,4 +30,3 @@ public class P1790 {
                     s1.charAt(second) == s2.charAt(first);
         }
     }
-}
