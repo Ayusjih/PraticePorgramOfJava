@@ -1,7 +1,6 @@
 package DataStructureAlgorithm.LEETCODE;
 
-public class P451 {
-    import java.util.*;
+
 
     class Solution {
         public String frequencySort(String s) {
@@ -27,4 +26,4 @@ public class P451 {
             return sb.toString();
         }
     }
-}
+
