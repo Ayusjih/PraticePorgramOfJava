@@ -17,7 +17,7 @@ public class P696 {
                 }
             }
 
-            // Add last pair
+
             count += Math.min(prevGroup, currGroup);
 
             return count;
