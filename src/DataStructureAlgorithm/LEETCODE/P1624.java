@@ -1,7 +1,7 @@
 package DataStructureAlgorithm.LEETCODE;
 
 public class P1624 {
-    class Solution {
+
         public int maxLengthBetweenEqualCharacters(String s) {
             int[] firstIndex = new int[26];
             Arrays.fill(firstIndex, -1);
@@ -21,4 +21,4 @@ public class P1624 {
             return maxLength;
         }
     }
-}
+
