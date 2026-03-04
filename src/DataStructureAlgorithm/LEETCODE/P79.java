@@ -1,6 +1,6 @@
 package DataStructureAlgorithm.LEETCODE;
 
-public class P79 {
+
     class Solution {
         public boolean exist(char[][] board, String word) {
             int m = board.length;
@@ -36,4 +36,4 @@ public class P79 {
             return found;
         }
     }
-}
+
