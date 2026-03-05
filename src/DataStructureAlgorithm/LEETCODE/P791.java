@@ -1,7 +1,7 @@
 package DataStructureAlgorithm.LEETCODE;
 
 public class P791 {
-    class Solution {
+
         public String customSortString(String order, String s) {
             int[] freq = new int[26];
 
@@ -32,4 +32,3 @@ public class P791 {
         }
     }
 
-}
