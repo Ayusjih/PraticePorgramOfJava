@@ -1,6 +1,5 @@
-package DataStructureAlgorithm.LEETCODE;
 
-public class P1528 {
+
 
     class Solution {
         public String restoreString(String s, int[] indices) {
@@ -14,4 +13,4 @@ public class P1528 {
         }
     }
 
-}
+
