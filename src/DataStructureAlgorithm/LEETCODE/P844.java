@@ -1,6 +1,6 @@
 package DataStructureAlgorithm.LEETCODE;
 
-public class P844 {
+
     class Solution {
         public boolean backspaceCompare(String s, String t) {
             int i = s.length() - 1;
@@ -46,4 +46,4 @@ public class P844 {
             return true;
         }
     }
-}
+
