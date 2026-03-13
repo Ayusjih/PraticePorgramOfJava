@@ -1,4 +1,3 @@
-package DataStructureAlgorithm.LEETCODE;
 
 public class P278 {
 
@@ -20,5 +19,4 @@ public class P278 {
             return left;
         }
     }
-
 }
