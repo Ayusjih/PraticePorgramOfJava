@@ -21,7 +21,6 @@ public class P374 {
                     left = mid + 1;
                 }
             }
-
             return -1;
         }
     }
