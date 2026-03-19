@@ -30,7 +30,6 @@ public class P328 {
                 even=even.next;
 
             }
-
             odd.next = evenHead;
 
             return head;
