@@ -19,7 +19,6 @@ public class P441 {
                     right = mid - 1;
                 }
             }
-
             return (int) right;
         }
     }
